@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catálogo — Gas El Volcán</title>
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<header class="encabezado">
+  <div class="contenedor">
+    <a href="index.html" class="marca"><span class="marca__icono">🔥</span> Gas El Volcán</a>
+    <nav class="nav" id="nav-principal">
+      <a href="index.html" class="nav__enlace">Inicio</a>
+      <a href="catalogo.html" class="nav__enlace nav__enlace--activo">Catálogo</a>
+      <a href="novedades.html" class="nav__enlace">Novedades</a>
+      <a href="nosotros.html" class="nav__enlace">Nosotros</a>
+      <a href="contacto.html" class="nav__enlace">Contacto</a>
+      <a href="login.html" class="nav__enlace">Ingresar</a>
+    </nav>
+    <div class="nav__acciones">
+      <a href="carrito.html" class="icono-carrito" aria-label="Carrito">🛒<span id="contador-carrito" class="icono-carrito__contador oculto">0</span></a>
+      <button class="menu-hamburguesa" aria-label="Abrir menú" onclick="document.getElementById('nav-principal').classList.toggle('nav--abierto')">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="encabezado-pagina">
+  <div class="contenedor">
+    <h1>Catálogo de cilindros</h1>
+    <p>Elige el formato que necesitas y agrégalo a tu carrito</p>
+  </div>
+</div>
+
+<main class="seccion">
+  <div class="contenedor">
+    <div id="aviso-carrito" class="mensaje-exito oculto">Producto agregado al carrito.</div>
+    <div class="grid-tarjetas" id="catalogo-grid"></div>
+  </div>
+</main>
+
+<footer class="pie">
+  <div class="contenedor">
+    <div>
+      <div class="pie__marca">Gas El Volcán</div>
+      <p>Distribución de gas licuado a domicilio en Chillán y comunas aledañas desde 1998.</p>
+    </div>
+    <div>
+      <h4>Contacto</h4>
+      <p>Chillán, Región de Ñuble<br>+56 9 1234 5678<br>contacto@gaselvolcan.cl</p>
+    </div>
+    <div>
+      <h4>Horario de despacho</h4>
+      <p>Lunes a Sábado<br>08:00 – 20:00 hrs</p>
+    </div>
+  </div>
+  <div class="pie__inferior">© 2024 Distribuidora de Gas El Volcán. Proyecto académico DSY1104.</div>
+</footer>
+
+<script src="js/catalogo.js"></script>
+<script src="js/carrito.js"></script>
+</body>
+</html>
