@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>¿Cómo saber cuándo recargar tu cilindro? — Gas El Volcán</title>
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<header class="encabezado">
+  <div class="contenedor">
+    <a href="index.html" class="marca"><span class="marca__icono">🔥</span> Gas El Volcán</a>
+    <nav class="nav" id="nav-principal">
+      <a href="index.html" class="nav__enlace">Inicio</a>
+      <a href="catalogo.html" class="nav__enlace">Catálogo</a>
+      <a href="novedades.html" class="nav__enlace nav__enlace--activo">Novedades</a>
+      <a href="nosotros.html" class="nav__enlace">Nosotros</a>
+      <a href="contacto.html" class="nav__enlace">Contacto</a>
+      <a href="login.html" class="nav__enlace">Ingresar</a>
+    </nav>
+    <div class="nav__acciones">
+      <a href="carrito.html" class="icono-carrito" aria-label="Carrito">🛒<span id="contador-carrito" class="icono-carrito__contador oculto">0</span></a>
+      <button class="menu-hamburguesa" aria-label="Abrir menú" onclick="document.getElementById('nav-principal').classList.toggle('nav--abierto')">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main class="seccion">
+  <div class="contenedor bloque-texto">
+    <a href="novedades.html" class="enlace-volver">← Volver a novedades</a>
+    <img src="https://images.unsplash.com/photo-1556909114-44e3e70034e2?w=900&q=80" alt="Persona revisando el nivel de gas de un cilindro" style="border-radius:10px; margin-bottom:24px;">
+    <h1>¿Cómo saber cuándo recargar tu cilindro?</h1>
+    <p>Quedarte sin gas a mitad de una comida es más común de lo que parece. Te compartimos algunas señales simples para anticiparte y pedir tu próximo cilindro con tiempo.</p>
+
+    <h2>1. La llama cambia de color</h2>
+    <p>Si la llama de tu cocina pasa de azul a un tono amarillento o naranja, es una señal de que el gas se está agotando.</p>
+
+    <h2>2. El agua caliente demora más</h2>
+    <p>Si notas que tu calefont tarda más en calentar el agua o la temperatura es más baja de lo habitual, puede deberse a baja presión de gas.</p>
+
+    <h2>3. Truco del agua tibia</h2>
+    <p>Pasa un paño con agua tibia por el exterior del cilindro. La zona donde queda gas se sentirá más fría al tacto que la zona vacía, marcando el nivel aproximado.</p>
+
+    <h2>4. Pide con anticipación</h2>
+    <p>Con Gas El Volcán puedes generar tu pedido en línea antes de quedarte sin gas y programar la entrega según la zona de despacho de tu comuna.</p>
+
+    <a href="novedades.html" class="boton boton--secundario">Volver a novedades</a>
+  </div>
+</main>
+
+<footer class="pie">
+  <div class="contenedor">
+    <div>
+      <div class="pie__marca">Gas El Volcán</div>
+      <p>Distribución de gas licuado a domicilio en Chillán y comunas aledañas desde 1998.</p>
+    </div>
+    <div>
+      <h4>Contacto</h4>
+      <p>Chillán, Región de Ñuble<br>+56 9 1234 5678<br>contacto@gaselvolcan.cl</p>
+    </div>
+    <div>
+      <h4>Horario de despacho</h4>
+      <p>Lunes a Sábado<br>08:00 – 20:00 hrs</p>
+    </div>
+  </div>
+  <div class="pie__inferior">© 2024 Distribuidora de Gas El Volcán. Proyecto académico DSY1104.</div>
+</footer>
+
+<script src="js/catalogo.js"></script>
+<script src="js/carrito.js"></script>
+</body>
+</html>
