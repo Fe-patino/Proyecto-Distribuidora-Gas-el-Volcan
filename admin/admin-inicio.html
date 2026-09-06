@@ -1,1 +1,53 @@
-/* --- Esta es una carpeta para los admin --- */
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Panel de administración — Gas El Volcán</title>
+<link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body class="admin-body">
+
+<div class="admin-shell">
+  <aside class="admin-sidebar">
+    <div class="marca"><span class="marca__icono">🔥</span> Gas El Volcán</div>
+    <nav class="admin-nav">
+      <a class="admin-nav__enlace admin-nav__enlace--activo" href="admin-inicio.html">📊 Inicio</a>
+      <a class="admin-nav__enlace" href="admin-productos.html">🧯 Productos</a>
+      <a class="admin-nav__enlace" href="admin-usuarios.html">👤 Usuarios</a>
+      <a class="admin-nav__enlace" href="../login.html">🚪 Cerrar sesión</a>
+    </nav>
+  </aside>
+
+  <main class="admin-main">
+    <div class="admin-header">
+      <h1>Panel de administración</h1>
+    </div>
+
+    <div class="admin-panel">
+      <h2 style="margin-top:0;">Bienvenida, Administradora</h2>
+      <p>Desde aquí puedes gestionar el catálogo de cilindros y los usuarios del sistema.</p>
+    </div>
+
+    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:20px;">
+      <div class="admin-panel">
+        <h3 style="margin-top:0;">Productos activos</h3>
+        <p style="font-family:var(--fuente-titulo); font-size:2rem; font-weight:700; margin:0;">3</p>
+        <a href="admin-productos.html" class="boton boton--secundario boton--pequeno" style="margin-top:10px; display:inline-block;">Gestionar</a>
+      </div>
+      <div class="admin-panel">
+        <h3 style="margin-top:0;">Usuarios registrados</h3>
+        <p style="font-family:var(--fuente-titulo); font-size:2rem; font-weight:700; margin:0;">3</p>
+        <a href="admin-usuarios.html" class="boton boton--secundario boton--pequeno" style="margin-top:10px; display:inline-block;">Gestionar</a>
+      </div>
+      <div class="admin-panel">
+        <h3 style="margin-top:0;">Zonas de despacho</h3>
+        <p style="font-family:var(--fuente-titulo); font-size:2rem; font-weight:700; margin:0;">5</p>
+        <p style="font-size:0.85rem; color:var(--gris-medio); margin-top:6px;">Centro, Oriente, Rural, Sur, Comercial</p>
+      </div>
+    </div>
+  </main>
+</div>
+
+</body>
+</html>
