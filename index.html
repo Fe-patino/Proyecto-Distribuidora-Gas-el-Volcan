@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gas El Volcán — Gas licuado a domicilio en Chillán</title>
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<header class="encabezado">
+  <div class="contenedor">
+    <a href="index.html" class="marca"><span class="marca__icono">🔥</span> Gas El Volcán</a>
+    <nav class="nav" id="nav-principal">
+      <a href="index.html" class="nav__enlace nav__enlace--activo">Inicio</a>
+      <a href="catalogo.html" class="nav__enlace">Catálogo</a>
+      <a href="novedades.html" class="nav__enlace">Novedades</a>
+      <a href="nosotros.html" class="nav__enlace">Nosotros</a>
+      <a href="contacto.html" class="nav__enlace">Contacto</a>
+      <a href="login.html" class="nav__enlace">Ingresar</a>
+    </nav>
+    <div class="nav__acciones">
+      <a href="carrito.html" class="icono-carrito" aria-label="Carrito">🛒<span id="contador-carrito" class="icono-carrito__contador oculto">0</span></a>
+      <button class="menu-hamburguesa" aria-label="Abrir menú" onclick="document.getElementById('nav-principal').classList.toggle('nav--abierto')">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="contenedor">
+      <div class="hero__contenido">
+        <h1 class="hero__eslogan">Gas a domicilio, rápido y seguro</h1>
+        <p class="hero__texto">Distribuimos cilindros de gas licuado a Chillán y comunas aledañas desde 1998. Pide en línea y sigue el estado de tu entrega sin llamar por teléfono.</p>
+        <a href="catalogo.html" class="boton boton--primario">Pedir ahora</a>
+      </div>
+      <div class="hero__imagen">
+        <img src="https://images.unsplash.com/photo-1585951237318-9ea5e175b891?w=800&q=80" alt="Cilindro de gas licuado listo para despacho">
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion">
+    <div class="contenedor">
+      <h2 class="titulo-seccion">Nuestros productos destacados</h2>
+      <p class="subtitulo-seccion">Los formatos de cilindro más pedidos por nuestros clientes.</p>
+      <div class="grid-tarjetas" id="destacados-grid"></div>
+    </div>
+  </section>
+
+  <section class="seccion seccion--gris">
+    <div class="contenedor">
+      <h2 class="titulo-seccion">¿Por qué elegirnos?</h2>
+      <p class="subtitulo-seccion">Más de 25 años entregando gas a la comunidad de Ñuble.</p>
+      <div class="beneficios">
+        <div class="beneficio">
+          <div class="beneficio__icono">⚡</div>
+          <h3>Rápido</h3>
+          <p>Entregamos entre 1 y 6 horas dependiendo de tu zona, todos los días de la semana.</p>
+        </div>
+        <div class="beneficio">
+          <div class="beneficio__icono">🛡️</div>
+          <h3>Seguro</h3>
+          <p>Cilindros certificados y repartidores capacitados en manejo seguro de gas licuado.</p>
+        </div>
+        <div class="beneficio">
+          <div class="beneficio__icono">🏠</div>
+          <h3>A domicilio</h3>
+          <p>Sin salir de casa: pide en línea y sigue el estado de tu pedido en tiempo real.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="pie">
+  <div class="contenedor">
+    <div>
+      <div class="pie__marca">Gas El Volcán</div>
+      <p>Distribución de gas licuado a domicilio en Chillán y comunas aledañas desde 1998.</p>
+    </div>
+    <div>
+      <h4>Contacto</h4>
+      <p>Chillán, Región de Ñuble<br>+56 9 1234 5678<br>contacto@gaselvolcan.cl</p>
+    </div>
+    <div>
+      <h4>Horario de despacho</h4>
+      <p>Lunes a Sábado<br>08:00 – 20:00 hrs</p>
+    </div>
+  </div>
+  <div class="pie__inferior">© 2024 Distribuidora de Gas El Volcán. Proyecto académico DSY1104.</div>
+</footer>
+
+<script src="js/catalogo.js"></script>
+<script src="js/carrito.js"></script>
+</body>
+</html>
