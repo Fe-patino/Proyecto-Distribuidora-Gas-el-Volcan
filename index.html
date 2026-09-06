@@ -10,7 +10,7 @@
 
 <header class="encabezado">
   <div class="contenedor">
-    <a href="index.html" class="marca"><span class="marca__icono">🔥</span> Gas El Volcán</a>
+    <a href="index.html" class="marca"><img src="img/logo.png" alt="Gas El Volcán" class="marca__logo"></a>
     <nav class="nav" id="nav-principal">
       <a href="index.html" class="nav__enlace nav__enlace--activo">Inicio</a>
       <a href="catalogo.html" class="nav__enlace">Catálogo</a>
@@ -30,15 +30,43 @@
 
 <main>
   <section class="hero">
-    <div class="contenedor">
-      <div class="hero__contenido">
-        <h1 class="hero__eslogan">Gas a domicilio, rápido y seguro</h1>
-        <p class="hero__texto">Distribuimos cilindros de gas licuado a Chillán y comunas aledañas desde 1998. Pide en línea y sigue el estado de tu entrega sin llamar por teléfono.</p>
-        <a href="catalogo.html" class="boton boton--primario">Pedir ahora</a>
+    <input type="radio" name="slide" id="slide1" class="carousel__radio" checked>
+    <input type="radio" name="slide" id="slide2" class="carousel__radio">
+    <input type="radio" name="slide" id="slide3" class="carousel__radio">
+
+    <div class="carousel__slides">
+      <div class="carousel__slide carousel__slide--1">
+        <img src="img/fotoprincipal.png" alt="Repartidor de Gas El Volcán">
+        <label for="slide3" class="carousel__flecha carousel__flecha--prev">‹</label>
+        <label for="slide2" class="carousel__flecha carousel__flecha--next">›</label>
       </div>
-      <div class="hero__imagen">
-        <img src="https://images.unsplash.com/photo-1585951237318-9ea5e175b891?w=800&q=80" alt="Cilindro de gas licuado listo para despacho">
+      <div class="carousel__slide carousel__slide--2">
+        <img src="img/balongas.png" alt="Cilindro de gas listo para despacho">
+        <label for="slide1" class="carousel__flecha carousel__flecha--prev">‹</label>
+        <label for="slide3" class="carousel__flecha carousel__flecha--next">›</label>
       </div>
+      <div class="carousel__slide carousel__slide--3">
+        <img src="img/reparto.png" alt="Cilindros de gas licuado">
+        <label for="slide2" class="carousel__flecha carousel__flecha--prev">‹</label>
+        <label for="slide1" class="carousel__flecha carousel__flecha--next">›</label>
+      </div>
+    </div>
+
+    <div class="hero__overlay">
+      <div class="contenedor">
+        <div class="hero__contenido">
+          <h1 class="hero__eslogan">Gas a domicilio, rápido y seguro</h1>
+          <h2 class="hero__subtitulo">Más de 25 años llevando gas a los hogares de Ñuble</h2>
+          <p class="hero__texto">Distribuimos cilindros de gas licuado a Chillán y comunas aledañas desde 1998. Pide en línea y sigue el estado de tu entrega sin llamar por teléfono.</p>
+          <a href="catalogo.html" class="boton boton--primario">Pedir ahora</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel__dots">
+      <label for="slide1" class="carousel__dot"></label>
+      <label for="slide2" class="carousel__dot"></label>
+      <label for="slide3" class="carousel__dot"></label>
     </div>
   </section>
 
