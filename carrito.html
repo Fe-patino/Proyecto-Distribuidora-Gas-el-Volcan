@@ -3,16 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gas El Volcán — Gas licuado a domicilio en Chillán</title>
+<title>Mi carrito — Gas El Volcán</title>
 <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
 
 <header class="encabezado">
   <div class="contenedor">
-    <a href="index.html" class="marca"><img src="../img/logo.png" alt="Gas El Volcán" class="marca__logo"></a>
+    <a href="index.html" class="marca"><img src="img/logo.png" alt="Gas El Volcán" class="marca__logo"></a>
     <nav class="nav" id="nav-principal">
-      <a href="index.html" class="nav__enlace nav__enlace--activo">Inicio</a>
+      <a href="index.html" class="nav__enlace">Inicio</a>
       <a href="catalogo.html" class="nav__enlace">Catálogo</a>
       <a href="novedades.html" class="nav__enlace">Novedades</a>
       <a href="nosotros.html" class="nav__enlace">Nosotros</a>
@@ -20,7 +20,7 @@
       <a href="login.html" class="nav__enlace">Ingresar</a>
     </nav>
     <div class="nav__acciones">
-      <a href="carrito.html" class="icono-carrito" aria-label="Carrito">🛒<span id="contador-carrito" class="icono-carrito__contador oculto">0</span></a>
+      <a href="carrito.html" class="icono-carrito nav__enlace--activo" aria-label="Carrito">🛒<span id="contador-carrito" class="icono-carrito__contador oculto">0</span></a>
       <button class="menu-hamburguesa" aria-label="Abrir menú" onclick="document.getElementById('nav-principal').classList.toggle('nav--abierto')">
         <span></span><span></span><span></span>
       </button>
@@ -28,79 +28,17 @@
   </div>
 </header>
 
-<main>
-  <section class="hero">
-    <input type="radio" name="slide" id="slide1" class="carousel__radio" checked>
-    <input type="radio" name="slide" id="slide2" class="carousel__radio">
-    <input type="radio" name="slide" id="slide3" class="carousel__radio">
+<div class="encabezado-pagina">
+  <div class="contenedor">
+    <h1>Mi carrito</h1>
+    <p>Revisa los cilindros que seleccionaste antes de confirmar tu pedido</p>
+  </div>
+</div>
 
-    <div class="carousel__slides">
-      <div class="carousel__slide carousel__slide--1">
-        <img src="img/repartidor_de_gas.jpg" alt="Repartidor de Gas El Volcán">
-        <label for="slide3" class="carousel__flecha carousel__flecha--prev">‹</label>
-        <label for="slide2" class="carousel__flecha carousel__flecha--next">›</label>
-      </div>
-      <div class="carousel__slide carousel__slide--2">
-        <img src="https://images.unsplash.com/photo-1585951237318-9ea5e175b891?w=1400&q=80" alt="Cilindro de gas listo para despacho">
-        <label for="slide1" class="carousel__flecha carousel__flecha--prev">‹</label>
-        <label for="slide3" class="carousel__flecha carousel__flecha--next">›</label>
-      </div>
-      <div class="carousel__slide carousel__slide--3">
-        <img src="https://images.unsplash.com/photo-1611270629569-8b357cb88da9?w=1400&q=80" alt="Cilindros de gas licuado">
-        <label for="slide2" class="carousel__flecha carousel__flecha--prev">‹</label>
-        <label for="slide1" class="carousel__flecha carousel__flecha--next">›</label>
-      </div>
-    </div>
-
-    <div class="hero__overlay">
-      <div class="contenedor">
-        <div class="hero__contenido">
-          <h1 class="hero__eslogan">Gas a domicilio, rápido y seguro</h1>
-          <h2 class="hero__subtitulo">Más de 25 años llevando gas a los hogares de Ñuble</h2>
-          <p class="hero__texto">Distribuimos cilindros de gas licuado a Chillán y comunas aledañas desde 1998. Pide en línea y sigue el estado de tu entrega sin llamar por teléfono.</p>
-          <a href="catalogo.html" class="boton boton--primario">Pedir ahora</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="carousel__dots">
-      <label for="slide1" class="carousel__dot"></label>
-      <label for="slide2" class="carousel__dot"></label>
-      <label for="slide3" class="carousel__dot"></label>
-    </div>
-  </section>
-
-  <section class="seccion">
-    <div class="contenedor">
-      <h2 class="titulo-seccion">Nuestros productos destacados</h2>
-      <p class="subtitulo-seccion">Los formatos de cilindro más pedidos por nuestros clientes.</p>
-      <div class="grid-tarjetas" id="destacados-grid"></div>
-    </div>
-  </section>
-
-  <section class="seccion seccion--gris">
-    <div class="contenedor">
-      <h2 class="titulo-seccion">¿Por qué elegirnos?</h2>
-      <p class="subtitulo-seccion">Más de 25 años entregando gas a la comunidad de Ñuble.</p>
-      <div class="beneficios">
-        <div class="beneficio">
-          <div class="beneficio__icono">⚡</div>
-          <h3>Rápido</h3>
-          <p>Entregamos entre 1 y 6 horas dependiendo de tu zona, todos los días de la semana.</p>
-        </div>
-        <div class="beneficio">
-          <div class="beneficio__icono">🛡️</div>
-          <h3>Seguro</h3>
-          <p>Cilindros certificados y repartidores capacitados en manejo seguro de gas licuado.</p>
-        </div>
-        <div class="beneficio">
-          <div class="beneficio__icono">🏠</div>
-          <h3>A domicilio</h3>
-          <p>Sin salir de casa: pide en línea y sigue el estado de tu pedido en tiempo real.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+<main class="seccion">
+  <div class="contenedor" id="carrito-contenido">
+    <!-- Contenido generado dinámicamente por js/carrito.js -->
+  </div>
 </main>
 
 <footer class="pie">
