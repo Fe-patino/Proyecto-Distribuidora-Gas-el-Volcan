@@ -262,6 +262,31 @@ input, select, textarea{ font-family: var(--fuente-texto); }
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
+/* ---------- Filtro de categorías del catálogo ---------- */
+.filtro-categorias{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+.filtro-categorias__boton{
+  padding: 10px 18px;
+  border-radius: 999px;
+  border: 2px solid var(--borde);
+  background: var(--blanco);
+  color: var(--gris-medio);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.filtro-categorias__boton:hover{
+  border-color: var(--naranja);
+  color: var(--gris-oscuro);
+}
+.filtro-categorias__boton--activo{
+  background: var(--naranja);
+  border-color: var(--naranja);
+  color: var(--blanco);
+}
 .tarjeta{
   background: var(--blanco);
   border: 1px solid var(--borde);

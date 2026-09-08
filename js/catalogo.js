@@ -175,13 +175,37 @@ function formatearPrecio(valor) {
 }
 
 // Renderiza las tarjetas del catálogo dentro de #catalogo-grid
+// Categoría actualmente seleccionada en el filtro del catálogo
+let categoriaActiva = "Todos";
+
+// Se llama al hacer clic en una pestaña de categoría
+function filtrarCatalogo(categoria, boton) {
+  categoriaActiva = categoria;
+
+  const botones = document.querySelectorAll(".filtro-categorias__boton");
+  botones.forEach(function (b) { b.classList.remove("filtro-categorias__boton--activo"); });
+  if (boton) boton.classList.add("filtro-categorias__boton--activo");
+
+  renderizarCatalogo();
+}
+
+// Renderiza las tarjetas del catálogo dentro de #catalogo-grid, según el filtro activo
 function renderizarCatalogo() {
   const contenedor = document.getElementById("catalogo-grid");
   if (!contenedor) return;
 
   contenedor.innerHTML = "";
 
-  PRODUCTOS.forEach(function (producto) {
+  const productosFiltrados = categoriaActiva === "Todos"
+    ? PRODUCTOS
+    : PRODUCTOS.filter(function (p) { return p.categoria === categoriaActiva; });
+
+  if (productosFiltrados.length === 0) {
+    contenedor.innerHTML = "<p>No hay productos en esta categoría por ahora.</p>";
+    return;
+  }
+
+  productosFiltrados.forEach(function (producto) {
     const tarjeta = document.createElement("article");
     tarjeta.className = "tarjeta";
     tarjeta.innerHTML =

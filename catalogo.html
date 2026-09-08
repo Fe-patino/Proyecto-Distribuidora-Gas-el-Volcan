@@ -38,6 +38,15 @@
 <main class="seccion">
   <div class="contenedor">
     <div id="aviso-carrito" class="mensaje-exito oculto">Producto agregado al carrito.</div>
+
+    <div class="filtro-categorias" id="filtro-categorias">
+      <button class="filtro-categorias__boton filtro-categorias__boton--activo" onclick="filtrarCatalogo('Todos', this)">Todos</button>
+      <button class="filtro-categorias__boton" onclick="filtrarCatalogo('Cilindros de Gas', this)">Cilindros de Gas</button>
+      <button class="filtro-categorias__boton" onclick="filtrarCatalogo('Reguladores', this)">Reguladores</button>
+      <button class="filtro-categorias__boton" onclick="filtrarCatalogo('Mangueras y Conexiones', this)">Mangueras y Conexiones</button>
+      <button class="filtro-categorias__boton" onclick="filtrarCatalogo('Accesorios', this)">Accesorios</button>
+    </div>
+
     <div class="grid-tarjetas" id="catalogo-grid"></div>
   </div>
 </main>
